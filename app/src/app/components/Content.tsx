@@ -1,87 +1,125 @@
 "use client";
 
-import { Box, Container } from "@mui/material";
+import { Avatar, Box, Button, Paper, Typography } from "@mui/material";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import {
-  Header,
-  ReachCallToAction,
-  Task,
-  TaskForm,
-  TaskList,
-} from "./Components";
-import { HeroBanner } from "./HeroBanner";
+import { PrizeCard } from "./PrizeCard";
+import { PrizeResultCard } from "./PrizeResultCard";
+import { prizes } from "./Prizes";
 
-const defaultTasks = [
-  { id: "1", text: "Contact Artifact L!ft Off", completed: false },
-  { id: "2", text: "Prepare for the Cosmic Council Meeting", completed: false },
-];
+export const SmoothPrizeShuffler = () => {
+  const [isSpinning, setIsSpinning] = useState(false);
+  const [selectedPrize, setSelectedPrize] = useState(null);
+  const [spinSpeed, setSpinSpeed] = useState(0.5);
 
-export const Content = () => {
-  const [tasks, setTasks] = useState<Task[]>(defaultTasks);
-  const [newTask, setNewTask] = useState<string>("");
+  const spin = () => {
+    if (isSpinning) return;
 
-  const addTask = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    const trimmedTask = newTask.trim();
+    setIsSpinning(true);
+    setSelectedPrize(null);
 
-    if (!trimmedTask) return;
+    setSpinSpeed(0.1);
 
-    const newTaskObj: Task = {
-      id: Date.now().toString(),
-      text: trimmedTask,
-      completed: false,
-    };
-
-    setTasks((prevTasks) => [...prevTasks, newTaskObj]);
-    setNewTask("");
-  };
-
-  const removeTask = (taskId: string): void => {
-    setTasks(tasks.filter((task) => task.id !== taskId));
-  };
-
-  const toggleComplete = (taskId: string): void => {
-    setTasks(
-      tasks.map((task) =>
-        task.id === taskId ? { ...task, completed: !task.completed } : task
-      )
-    );
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
-    if (e.key === "Enter" && newTask.trim()) {
-      addTask(e as unknown as React.FormEvent<HTMLFormElement>);
-    }
+    setTimeout(() => {
+      const winner = prizes[Math.floor(Math.random() * prizes.length)];
+      // @ts-expect-error ignore type error
+      setSelectedPrize(winner);
+      setIsSpinning(false);
+    }, 3500);
   };
 
   return (
     <Box
-      sx={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom right, #1f2937, #1c1c1c)",
-        color: "white",
-        padding: 4,
-      }}
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      gap={2}
+      p={2}
+      maxWidth="md"
+      mx="auto"
     >
-      <Container maxWidth="md">
-        <Box sx={{ marginBottom: 6 }}>
-          <Header />
-          <HeroBanner title="Simplify, Organize, Elevate" />
-        </Box>
-        <TaskForm
-          newTask={newTask}
-          setNewTask={setNewTask}
-          addTask={addTask}
-          handleKeyPress={handleKeyPress}
-        />
-        <TaskList
-          tasks={tasks}
-          setTasks={setTasks}
-          toggleComplete={toggleComplete}
-          removeTask={removeTask}
-        />
-        <ReachCallToAction />
-      </Container>
+      {/* Title with Avatar */}
+      <Box display="flex" alignItems="center" gap={2} className="mt-6 mb-4">
+        <Avatar alt="Demo Logo" src="../items/demon-logo.jpg" />
+        <Typography
+          variant="h4"
+          className="text-purple-600 mt-1"
+          component="h1"
+        >
+          Demon Prize Wheel
+        </Typography>
+      </Box>
+
+      <hr
+        style={{ width: "100%", height: "1px", borderColor: "#673ab7" }}
+        className="mb-4"
+      />
+
+      {/* Prize Display */}
+      <Paper
+        elevation={3}
+        sx={{
+          width: "100%",
+          height: isSpinning ? "30rem" : "auto",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          overflow: "hidden",
+          position: "relative",
+          padding: 2,
+        }}
+      >
+        <AnimatePresence mode="wait">
+          {isSpinning ? (
+            <motion.div
+              key="spinning"
+              className="absolute inset-0 flex items-center justify-center"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div className="flex flex-col gap-2">
+                {[...prizes, ...prizes].map((prize, index) => (
+                  <PrizeCard
+                    key={index}
+                    prize={prize}
+                    isSpinning={isSpinning}
+                    spinSpeed={spinSpeed}
+                  />
+                ))}
+              </motion.div>
+            </motion.div>
+          ) : selectedPrize ? (
+            <PrizeResultCard selectedPrize={selectedPrize} />
+          ) : (
+            <Typography variant="h6" color="textSecondary" align="center">
+              Press SPIN to try your luck!
+            </Typography>
+          )}
+        </AnimatePresence>
+      </Paper>
+
+      {/* Spin Button */}
+      <Button
+        onClick={spin}
+        disabled={isSpinning}
+        variant="contained"
+        color="primary"
+        sx={{
+          width: "7.5rem",
+          height: "7.5rem",
+          borderRadius: "50%",
+          fontSize: "1.5rem",
+          fontWeight: "bold",
+          background: "linear-gradient(to bottom right, #673ab7, #2196f3)",
+          "&:hover": {
+            background: "linear-gradient(to bottom right, #5e35b1, #1e88e5)",
+          },
+          transition: "all 0.2s",
+        }}
+      >
+        {isSpinning ? "Rizzing" : "SPIN!"}
+      </Button>
     </Box>
   );
 };

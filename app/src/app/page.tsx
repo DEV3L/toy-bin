@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@mui/material";
-import { Content } from "./components/Content";
+import { SmoothPrizeShuffler } from "./components/Content";
 import Footer from "./components/Footer";
 import { Head } from "./components/Head";
 import "./globals.css";
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Head />
       <ThemeProvider theme={theme}>
-        <Content />
+        <SmoothPrizeShuffler />
       </ThemeProvider>
       <Footer />
     </>
