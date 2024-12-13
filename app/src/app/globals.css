@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Dank Mono";
+  src: url("/fonts/DankMono-Regular.woff2") format("woff2"),
+    url("/fonts/DankMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DankMonoBold";
+  src: url("/fonts/DankMono-Bold.woff2") format("woff2"),
+    url("/fonts/DankMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dank Mono Italic";
+  src: url("/fonts/DankMono-Italic.woff2") format("woff2"),
+    url("/fonts/DankMono-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Poppins, sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
