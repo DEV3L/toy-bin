@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { default as NextHead } from "next/head";
 import { useEffect } from "react";
 
-export const Head = ({ title = "Artifact L!ft Off" }) => {
+export const Head = ({ title = "ToЧ Bin" }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
@@ -18,21 +18,21 @@ export const Head = ({ title = "Artifact L!ft Off" }) => {
 };
 
 export const metadata: Metadata = {
-  title: "AiDo Task Organizer",
+  title: "ToЧ Bin",
   description:
-    "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
+    "Experience the thrill of spinning the wheel with ToЧ Bin, a fun and engaging prize-winning game.",
   openGraph: {
-    title: "AiDo Task Organizer",
+    title: "ToЧ Bin",
     description:
-      "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
-    url: "https://aido-task-organizer.vercel.app",
-    siteName: "AiDo Task Organizer",
+      "Experience the thrill of spinning the wheel with ToЧ Bin, a fun and engaging prize-winning game.",
+    url: "https://toy-bin.vercel.app",
+    siteName: "ToЧ Bin",
     images: [
       {
         url: "/og-image.png", // Ensure this image is added to your public folder
         width: 1200,
         height: 630,
-        alt: "AiDo Task Organizer",
+        alt: "ToЧ Bin",
       },
     ],
     locale: "en_US",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AiDo Task Organizer",
+    title: "ToЧ Bin",
     description:
-      "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
+      "Experience the thrill of spinning the wheel with ToЧ Bin, a fun and engaging prize-winning game.",
     images: ["/og-image.png"],
   },
 };

@@ -1,7 +1,7 @@
 {
-  "name": "Artifact L!ft Off",
-  "short_name": "Artifact",
-  "description": "A responsive site template to showcase projects and artifacts with ease.",
+  "name": "Demon Toy Bin",
+  "short_name": "Demon Toy Bin",
+  "description": "This project is a web application designed to provide a customizable spinning wheel for prizes.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

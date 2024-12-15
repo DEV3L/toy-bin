@@ -1,8 +1,8 @@
 ---
-title: "About Artifact L!ft Off"
-description: "Discover the story behind Artifact L!ft Off, a cosmic platform empowering creators to elevate their projects with stunning visuals and effortless design."
+title: "About ToЧ Bin"
+description: "Discover the story behind ToЧ Bin, a cosmic platform empowering creators to elevate their projects with stunning visuals and effortless design."
 keywords:
-  - About Artifact L!ft Off
+  - About ToЧ Bin
   - cosmic design platform
   - Justin Beall founder story
   - artifact showcase
@@ -12,7 +12,7 @@ author: "Justin Beall"
 date: "2024-12-06"
 ---
 
-# About Artifact L!ft Off
+# About ToЧ Bin
 
 <div class="hero-banner" style="background-image: url('../images/about/artifact-liftoff-about-banner.png');">
   <div class="hero-banner-overlay"></div>
@@ -23,13 +23,13 @@ date: "2024-12-06"
 
 ---
 
-At <span class="italic">Artifact L!ft Off</span>, we believe every creation deserves a platform that highlights its brilliance. By combining sleek visuals, futuristic tools, and effortless usability, we’ve built a platform that transforms ideas into cosmic showcases of mastery.
+At <span class="italic">ToЧ Bin</span>, we believe every creation deserves a platform that highlights its brilliance. By combining sleek visuals, futuristic tools, and effortless usability, we’ve built a platform that transforms ideas into cosmic showcases of mastery.
 
 ---
 
 ## **Our Mission**
 
-Our mission is to empower creators to shine. Whether you're sharing a portfolio, launching a product, or building your personal brand, <span class="italic">Artifact L!ft Off</span> provides the tools to elevate your projects.
+Our mission is to empower creators to shine. Whether you're sharing a portfolio, launching a product, or building your personal brand, <span class="italic">ToЧ Bin</span> provides the tools to elevate your projects.
 
 - **Cosmic Inspiration**: A design ethos inspired by the infinite possibilities of the cosmos.
 - **Effortless Simplicity**: Intuitive templates and tools to bring your vision to life.
@@ -50,11 +50,11 @@ Experience the possibilities with our interactive carousel, showcasing the power
 
 ---
 
-## **The Story Behind Artifact L!ft Off**
+## **The Story Behind ToЧ Bin**
 
-<img src="../images/about/founder.png" alt="Placeholder image representing Justin Beall, founder of Artifact L!ft Off" style="float: right; margin-left: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+<img src="../images/about/founder.png" alt="Placeholder image representing Justin Beall, founder of ToЧ Bin" style="float: right; margin-left: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
 
-<span class="italic">Artifact L!ft Off</span> was born from founder Justin Beall’s passion for storytelling and creativity. As a combat medic turned tech innovator, Justin learned to adapt, solve problems, and elevate the human experience. Recognizing the need for platforms that blend functionality with stunning design, he created **Artifact L!ft Off** to empower creators everywhere.
+<span class="italic">ToЧ Bin</span> was born from founder Justin Beall’s passion for storytelling and creativity. As a combat medic turned tech innovator, Justin learned to adapt, solve problems, and elevate the human experience. Recognizing the need for platforms that blend functionality with stunning design, he created **ToЧ Bin** to empower creators everywhere.
 
 Fueled by a love for innovation and storytelling, Justin built a space where artifacts—projects, portfolios, and creative works—become unforgettable showcases of mastery.
 
@@ -76,13 +76,13 @@ We’re guided by principles that shape everything we create:
 
 ## **[Start Your Journey](contact.md)**
 
-Take the first step in creating something amazing with Artifact L!ft Off. Build responsive, visually stunning sites in minutes.
+Take the first step in creating something amazing with ToЧ Bin. Build responsive, visually stunning sites in minutes.
 
 [Visit Our Contact Page](contact.md) to get started today.
 
 <img src="../images/cta-liftoff.png" class="img-16-9"
     alt="A glowing artifact in the spotlight, ready for display">
 
-**Artifact L!ft Off**: Elevate your projects, effortlessly.
+**ToЧ Bin**: Elevate your projects, effortlessly.
 
 ---

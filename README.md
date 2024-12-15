@@ -1,15 +1,16 @@
-# Artifact L!ft Off
+# ToЧ Bin
 
-Welcome to the Artifact L!ft Off repository. This project is designed to provide a simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively.
+Welcome to the ToЧ Bin repository. This project is a web application designed to provide a customizable spinning wheel for prizes. It's perfect for creating engaging reward systems for kids or fun activities for events.
 
 ## Table of Contents
 
-- [Artifact L!ft Off](#artifact-lft-off)
+- [ToЧ Bin](#toч-bin)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
   - [Features](#features)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [Marketing Site Usage](#marketing-site-usage)
+  - [Vercel App Usage](#vercel-app-usage)
   - [Customization](#customization)
   - [Deployment](#deployment)
   - [Contributing](#contributing)
@@ -17,17 +18,14 @@ Welcome to the Artifact L!ft Off repository. This project is designed to provide
 
 ## Project Overview
 
-Artifact L!ft Off is a responsive site template designed to showcase projects and artifacts with ease. Whether you're launching a product, creating a personal portfolio, or showcasing a collection, Artifact L!ft Off empowers you to get started fast.
+ToЧ Bin is a web app that allows users to create a spinning wheel with custom prizes. It's designed to be flexible and easy to use, making it ideal for various applications, from educational reward systems to party games.
 
 ## Features
 
-- **Interactive Design**: Create visually engaging sites that highlight your content.
-- **Quick Setup**: Get started with minimal effort using pre-built templates.
-- **Customizable Layouts**: Tailor your site to your project’s needs.
-- **Responsive Design**: Ensure your site looks great on any device.
-- **Hero Banner**: Feature a prominent hero banner to capture attention with stunning visuals.
-- **Carousel**: Showcase multiple images or content pieces in a dynamic carousel format.
-- **Contact Form Integration**: Easily connect with your audience using a Formspree-powered contact form.
+- **Customizable Prizes**: Easily add and modify prizes on the spinning wheel.
+- **Interactive Design**: Engaging and fun interface for users of all ages.
+- **Responsive Layout**: Ensures the app looks great on any device.
+- **Simple Setup**: Quick and easy to get started with minimal configuration.
 
 ## Installation
 
@@ -36,8 +34,8 @@ To set up the project locally using Hatch, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/dev3l/artifact-lift-off.git
-   cd artifact-lift-off
+   git clone https://github.com/dev3l/toy-bin.git
+   cd toy-bin
    ```
 
 2. **Create and activate a virtual environment**:
@@ -54,7 +52,7 @@ To set up the project locally using Hatch, follow these steps:
    cd contents
    ```
 
-## Usage
+## Marketing Site Usage
 
 To preview the site locally, use the following command:
 
@@ -63,6 +61,30 @@ mkdocs serve
 ```
 
 Access the site at `http://127.0.0.1:8000`.
+
+## Vercel App Usage
+
+To set up and run the application locally, follow these steps:
+
+1. **Navigate to the app directory**:
+
+   ```bash
+   cd app
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the development server**:
+
+   ```bash
+   yarn dev
+   ```
+
+4. **Access the app**: Open your browser and go to `http://localhost:3000` to see the application in action.
 
 ## Customization
 

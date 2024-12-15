@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Artifact L!ft Off"
+title: "Welcome to ToЧ Bin"
 description: "A simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively."
 keywords:
   - site builder
@@ -11,13 +11,13 @@ author: "Justin Beall"
 date: "2024-12-06"
 ---
 
-# Welcome to Artifact L!ft Off
+# Welcome to ToЧ Bin
 
 <div class="hero-banner" style="background-image: url('images/home/hero-banner.png');">
   <div class="hero-banner-overlay"></div>
   <div class="hero-banner-content">
     <p class="hero-banner-title">
-      Artifact L!ft Off
+      ToЧ Bin
     </p>
     <p class="hero-banner-subtitle">
       Build stunning, responsive sites
@@ -30,16 +30,16 @@ date: "2024-12-06"
 
 ---
 
-## **Why Artifact L!ft Off?**
+## **Why ToЧ Bin?**
 
-Because it builds stunning, responsive sites quickly and effectively. Whether showcasing a collection, launching a product, or creating a personal portfolio, Artifact L!ft Off empowers you to get started fast.
+Because it builds stunning, responsive sites quickly and effectively. Whether showcasing a collection, launching a product, or creating a personal portfolio, ToЧ Bin empowers you to get started fast.
 
 ---
 
 ## **Features**
 
 <img src="images/home/features-highlight.png" class="img-16-9"
-    alt="A glowing template showcasing Artifact L!ft Off features">
+    alt="A glowing template showcasing ToЧ Bin features">
 
 - **Interactive Design**: Create visually engaging sites that highlight your content.
 - **Quick Setup**: Get started with minimal effort using pre-built templates.
@@ -49,11 +49,11 @@ Because it builds stunning, responsive sites quickly and effectively. Whether sh
 
 ## **[Start Your Journey](contact.md)**
 
-Take the first step in creating something amazing with Artifact L!ft Off. Build responsive, visually stunning sites in minutes.
+Take the first step in creating something amazing with ToЧ Bin. Build responsive, visually stunning sites in minutes.
 
 [Visit Our Contact Page](contact.md) to get started today.
 
 <img src="images/cta-liftoff.png" class="img-16-9"
     alt="A glowing artifact in the spotlight, ready for display">
 
-**Artifact L!ft Off**: Elevate your projects, effortlessly.
+**ToЧ Bin**: Elevate your projects, effortlessly.

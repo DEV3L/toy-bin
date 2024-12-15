@@ -1,8 +1,8 @@
 ---
-title: "Contact Artifact L!ft Off"
-description: "Get in touch with Artifact L!ft Off to elevate your projects. Whether you're exploring ideas or ready to launch, we're here to help. Let's make something cosmic."
+title: "Contact ToЧ Bin"
+description: "Get in touch with ToЧ Bin to elevate your projects. Whether you're exploring ideas or ready to launch, we're here to help. Let's make something cosmic."
 keywords:
-  - Artifact L!ft Off contact
+  - ToЧ Bin contact
   - project showcase platform
   - cosmic creativity
   - innovative project tools
@@ -11,7 +11,7 @@ author: "Justin Beall"
 date: "2024-12-06"
 ---
 
-# Contact Artifact L!ft Off
+# Contact ToЧ Bin
 
 <div class="hero-banner" style="background-image: url('../images/contact/artifact-liftoff-contact-banner.png');">
   <div class="hero-banner-overlay"></div>
@@ -22,7 +22,7 @@ date: "2024-12-06"
 
 ---
 
-At <span class="italic">Artifact L!ft Off</span>, we believe every idea deserves a platform as extraordinary as the cosmos. Whether you're just exploring or ready to launch, reach out with confidence, and let’s elevate your project.
+At <span class="italic">ToЧ Bin</span>, we believe every idea deserves a platform as extraordinary as the cosmos. Whether you're just exploring or ready to launch, reach out with confidence, and let’s elevate your project.
 
 ---
 
@@ -74,14 +74,14 @@ At <span class="italic">Artifact L!ft Off</span>, we believe every idea deserves
 ## **Contact Information**
 
 - **Email**: [support@artifactliftoff.com](mailto:dev3loper.ai@gmail.com)
-- **LinkedIn**: [<span class="italic">Artifact L!ft Off</span>](https://www.linkedin.com/company/dev3loper-ai/)
+- **LinkedIn**: [<span class="italic">ToЧ Bin</span>](https://www.linkedin.com/company/dev3loper-ai/)
 
 ---
 
 ## **Elevate Your Mastery**
 
-Whether you’re showcasing a portfolio, launching a product, or bringing your ideas to life, <span class="italic">Artifact L!ft Off</span> is here to help you reach the stars. Let’s start the conversation today.
+Whether you’re showcasing a portfolio, launching a product, or bringing your ideas to life, <span class="italic">ToЧ Bin</span> is here to help you reach the stars. Let’s start the conversation today.
 
-<img src="../images/contact/artifact-liftoff-support.png" class="img-16-9" alt="A glowing artifact representing Artifact L!ft Off support">
+<img src="../images/contact/artifact-liftoff-support.png" class="img-16-9" alt="A glowing artifact representing ToЧ Bin support">
 
 ---

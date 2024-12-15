@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "artifact-lift-off"
+name = "toy-bin"
 dynamic = ["version"]
 description = "A simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively."
 license = { file = "LICENSE" }

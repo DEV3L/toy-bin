@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://artifact-lift-off.vercel.app/sitemap.xml 
+Sitemap: https://toy-bin.vercel.app/sitemap.xml 

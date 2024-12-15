@@ -6,9 +6,9 @@ keywords:
   - task organizer
   - futuristic productivity
   - to-do app
-  - Artifact L!ft Off
+  - ToЧ Bin
 image: "../images/product/aido-product-banner.png"
-author: "Artifact L!ft Off Team"
+author: "ToЧ Bin Team"
 date: "2024-12-06"
 ---
 
@@ -42,7 +42,7 @@ Whether it’s completing important tasks or planning your next cosmic adventure
 
 4. **Preset Cosmic Tasks**:  
    Get started with inspiring preset tasks like:
-   - **"Contact Artifact L!ft Off"**: Stay connected with your cosmic allies.
+   - **"Contact ToЧ Bin"**: Stay connected with your cosmic allies.
    - **"Prepare for the Cosmic Council Meeting"**: Plan your next interstellar strategy session.
 
 ---
@@ -65,20 +65,20 @@ Try <span class="italic">AiDo</span> today and experience the perfect blend of s
 ## **Why Choose AiDo?**
 
 - **Intuitive Design**: Built for ease of use, ensuring every task is within reach.
-- **Cosmic Inspiration**: A sleek and futuristic interface that aligns with the Artifact L!ft Off theme.
+- **Cosmic Inspiration**: A sleek and futuristic interface that aligns with the ToЧ Bin theme.
 - **Accessible Everywhere**: Optimized for both desktop and mobile, so you can manage tasks anywhere.
 
 ---
 
 ## **[Start Your Journey](contact.md)**
 
-Take the first step in creating something amazing with Artifact L!ft Off. Build responsive, visually stunning sites in minutes.
+Take the first step in creating something amazing with ToЧ Bin. Build responsive, visually stunning sites in minutes.
 
 [Visit Our Contact Page](contact.md) to get started today.
 
 <img src="../images/cta-liftoff.png" class="img-16-9"
     alt="A glowing artifact in the spotlight, ready for display">
 
-**Artifact L!ft Off**: Elevate your projects, effortlessly.
+**ToЧ Bin**: Elevate your projects, effortlessly.
 
 ---

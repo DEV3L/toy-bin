@@ -1,23 +1,25 @@
-# Artifact L!ft Off
+## **ToЧ Bin**
 
-Welcome to the Artifact L!ft Off repository. This project is designed to provide a simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively.
+Welcome to the ToЧ Bin repository. This game is an engaging and interactive reward system designed to motivate kids through fun and strategic gameplay. By completing chores, kids earn spins on a virtual wheel that offers a variety of exciting prizes and bonus opportunities. The game encourages strategic thinking and risk-taking, ensuring that every player walks away with a rewarding experience.
+
+---
 
 ## Table of Contents
 
-- [Artifact L!ft Off](#artifact-lft-off)
-  - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Customization](#customization)
-  - [Deployment](#deployment)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [**ToЧ Bin**](#toч-bin)
+- [Table of Contents](#table-of-contents)
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Project Overview
 
-Artifact L!ft Off is a responsive site template designed to showcase projects and artifacts with ease. Whether you're launching a product, creating a personal portfolio, or showcasing a collection, Artifact L!ft Off empowers you to get started fast.
+ToЧ Bin is a dynamic and rewarding system where kids earn spins by completing chores. Each spin offers a chance to win prizes, gain bonus spins, or even spin again. The game is designed to be both fun and educational, promoting responsibility and strategic decision-making in a playful environment.
 
 ## Features
 
@@ -36,8 +38,8 @@ To set up the project locally using Hatch, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/dev3l/artifact-lift-off.git
-   cd artifact-lift-off
+   git clone https://github.com/dev3l/toy-bin.git
+   cd toy-bin
    ```
 
 2. **Create and activate a virtual environment**:

@@ -1,10 +1,10 @@
-# AiDo Task Organizer
+# ToЧ Bin
 
-Welcome to the AiDo Task Organizer repository. AiDo is a responsive, futuristic task organizer designed to streamline daily task management through a clean and intuitive interface. Built with **React** and **Framer Motion**, AiDo combines minimalist design with subtle animations to create an engaging and efficient task management experience.
+Welcome to the ToЧ Bin repository. ToЧ Bin is a responsive, futuristic task organizer designed to streamline daily task management through a clean and intuitive interface. Built with **React** and **Framer Motion**, ToЧ Bin combines minimalist design with subtle animations to create an engaging and efficient task management experience.
 
 ## Table of Contents
 
-- [AiDo Task Organizer](#aido-task-organizer)
+- [ToЧ Bin](#toч-bin)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Functional Requirements](#functional-requirements)
@@ -19,7 +19,7 @@ Welcome to the AiDo Task Organizer repository. AiDo is a responsive, futuristic 
 
 ## Overview
 
-AiDo is designed to provide a seamless task management experience with a futuristic theme. The app begins with two preset tasks to introduce the interface and inspire creativity.
+ToЧ Bin is designed to provide a seamless task management experience with a futuristic theme. The app begins with two preset tasks to introduce the interface and inspire creativity.
 
 ## Functional Requirements
 
@@ -32,7 +32,7 @@ AiDo is designed to provide a seamless task management experience with a futuris
 
 2. **Preset Tasks**
 
-   - Initial tasks include "Contact Artifact L!ft Off" and a random space-themed task.
+   - Initial tasks include "Contact ToЧ Bin" and a random space-themed task.
 
 3. **Page Layout**
 
