@@ -1,12 +1,16 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { Prize } from "./prizes/prize";
+import { getRarityStyles } from "./prizes/prizeRarity";
 
 interface PrizeResultCardProps {
-  selectedPrize: { name: string; description: string; image: string } | null;
+  selectedPrize: Prize | null;
 }
 
 export const PrizeResultCard = ({ selectedPrize }: PrizeResultCardProps) => {
   if (!selectedPrize) return null;
+
+  const rarityStyles = getRarityStyles(selectedPrize.rarity);
 
   return (
     <motion.div
@@ -45,6 +49,7 @@ export const PrizeResultCard = ({ selectedPrize }: PrizeResultCardProps) => {
             transition={{ delay: 0.2 }}
           >
             <img
+              style={rarityStyles}
               src={`../items/${selectedPrize.image}`}
               alt={selectedPrize.name}
               className="w-full h-auto"

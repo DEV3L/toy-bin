@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { PrizeCard } from "./PrizeCard";
 import { PrizeResultCard } from "./PrizeResultCard";
-import { prizes } from "./Prizes";
+import { prizes } from "./prizes/prizes";
 
 export const SmoothPrizeShuffler = () => {
   const [isSpinning, setIsSpinning] = useState(false);
