@@ -1,16 +1,37 @@
 "use client";
 
+import { Checkbox, Divider, FormControlLabel, Stack } from "@mui/material";
+
 import { Avatar, Box, Button, Paper, Typography } from "@mui/material";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { PrizeCard } from "./PrizeCard";
 import { PrizeResultCard } from "./PrizeResultCard";
-import { prizes } from "./prizes/prizes";
+import { season1Prizes } from "./prizes/Season1Prizes";
+import { season2Prizes } from "./prizes/Season2Prizes";
+import { bonusPlusSpin, bonusSpinAgain } from "./prizes/SpecialBonus";
+import { fails } from "./prizes/SpecialFails";
+
+export const prizes = [
+  ...season1Prizes,
+  ...season2Prizes,
+  ...fails,
+  ...bonusPlusSpin,
+];
 
 export const SmoothPrizeShuffler = () => {
   const [isSpinning, setIsSpinning] = useState(false);
   const [selectedPrize, setSelectedPrize] = useState(null);
   const [spinSpeed, setSpinSpeed] = useState(0.5);
+  const [includeDemon, setIncludeDemon] = useState(true);
+  const [includeSlowbro, setIncludeSlowbro] = useState(false);
+
+  const specialPrizes = [...bonusPlusSpin, ...bonusSpinAgain, ...fails];
+  const demonPrizes = includeDemon ? [...season1Prizes, ...season2Prizes] : [];
+
+  const includeSlowbroPrizes = includeSlowbro
+    ? [...season1Prizes, ...season2Prizes]
+    : [];
 
   const spin = () => {
     if (isSpinning) return;
@@ -21,7 +42,13 @@ export const SmoothPrizeShuffler = () => {
     setSpinSpeed(0.1);
 
     setTimeout(() => {
-      const winner = prizes[Math.floor(Math.random() * prizes.length)];
+      const prizesToUse = [
+        ...specialPrizes,
+        ...demonPrizes,
+        ...includeSlowbroPrizes,
+      ];
+      const winner =
+        prizesToUse[Math.floor(Math.random() * prizesToUse.length)];
       // @ts-expect-error ignore type error
       setSelectedPrize(winner);
       setIsSpinning(false);
@@ -39,8 +66,8 @@ export const SmoothPrizeShuffler = () => {
       mx="auto"
     >
       {/* Title with Avatar */}
-      <Box display="flex" alignItems="center" gap={2} className="mt-6 mb-4">
-        <Avatar alt="Demo Logo" src="../items/demon-logo.jpg" />
+      <Box display="flex" alignItems="center" gap={2} className="mt-6 mb-2">
+        <Avatar alt="Demo Logo" src="../items/demon-logo.png" />
         <Typography
           variant="h4"
           className="text-purple-600 mt-1"
@@ -50,8 +77,33 @@ export const SmoothPrizeShuffler = () => {
         </Typography>
       </Box>
 
-      <hr
-        style={{ width: "100%", height: "1px", borderColor: "#673ab7" }}
+      <Divider sx={{ width: "100%", borderColor: "#673ab7" }} />
+
+      <Stack direction="row" spacing={2} justifyContent="center">
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={includeDemon}
+              onChange={(e) => setIncludeDemon(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Include Demon Items"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={includeSlowbro}
+              onChange={(e) => setIncludeSlowbro(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Include Slowbro Items"
+        />
+      </Stack>
+
+      <Divider
+        sx={{ width: "100%", borderColor: "#673ab7" }}
         className="mb-4"
       />
 
