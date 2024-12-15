@@ -9,12 +9,15 @@ import { PrizeCard } from "./PrizeCard";
 import { PrizeResultCard } from "./PrizeResultCard";
 import { season1Prizes } from "./prizes/Season1Prizes";
 import { season2Prizes } from "./prizes/Season2Prizes";
+import { season3Prizes } from "./prizes/Season3Prizes";
+import { season4Prizes } from "./prizes/Season4Prizes";
 import { bonusPlusSpin, bonusSpinAgain } from "./prizes/SpecialBonus";
 import { fails } from "./prizes/SpecialFails";
 
 export const prizes = [
   ...season1Prizes,
   ...season2Prizes,
+  ...season3Prizes,
   ...fails,
   ...bonusPlusSpin,
 ];
@@ -27,11 +30,11 @@ export const SmoothPrizeShuffler = () => {
   const [includeSlowbro, setIncludeSlowbro] = useState(false);
 
   const specialPrizes = [...bonusPlusSpin, ...bonusSpinAgain, ...fails];
-  const demonPrizes = includeDemon ? [...season1Prizes, ...season2Prizes] : [];
-
-  const includeSlowbroPrizes = includeSlowbro
-    ? [...season1Prizes, ...season2Prizes]
+  const demonPrizes = includeDemon
+    ? [...season1Prizes, ...season2Prizes, ...season3Prizes]
     : [];
+
+  const includeSlowbroPrizes = includeSlowbro ? [...season4Prizes] : [];
 
   const spin = () => {
     if (isSpinning) return;
@@ -46,7 +49,8 @@ export const SmoothPrizeShuffler = () => {
         ...specialPrizes,
         ...demonPrizes,
         ...includeSlowbroPrizes,
-      ];
+      ].filter((prize) => prize.available);
+
       const winner =
         prizesToUse[Math.floor(Math.random() * prizesToUse.length)];
       // @ts-expect-error ignore type error
