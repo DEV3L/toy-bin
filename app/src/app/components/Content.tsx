@@ -38,7 +38,6 @@ export const SmoothPrizeShuffler = () => {
     : [];
 
   const includeSlowbroPrizes = includeSlowbro ? [...season4Prizes] : [];
-  const noSprinklesPrizes = isNoSprinkles ? [...participation1Prizes] : [];
 
   const spin = () => {
     if (isSpinning) return;
