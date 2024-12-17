@@ -2,13 +2,6 @@ import { Prize } from "./prize";
 
 export const season2Prizes: Prize[] = [
   {
-    name: "Check Please",
-    description: "When you need to get out like now",
-    image: "Season 2/Check Please.jpg",
-    rarity: "legendary",
-    available: true,
-  },
-  {
     name: "Dinner Time",
     description: "Who let Rexie out?",
     image: "Season 2/Dinner Time.jpg",
@@ -20,14 +13,6 @@ export const season2Prizes: Prize[] = [
     description: "It can smell your fear?",
     image: "Season 2/Dont Tazz Me Bro.jpg",
     rarity: "legendary",
-    available: true,
-  },
-
-  {
-    name: "Flower Power",
-    description: "All the mushrooms he can eat...",
-    image: "Season 2/Flower Power.jpg",
-    rarity: "uncommon",
     available: true,
   },
   {
@@ -42,14 +27,6 @@ export const season2Prizes: Prize[] = [
     description: "Line up for cigarette burns!",
     image: "Season 2/Get In Line.jpg",
     rarity: "rare",
-    available: true,
-  },
-
-  {
-    name: "Hulk Smash",
-    description: "Hulk Want Mush Mush",
-    image: "Season 2/Hulk Smash.jpg",
-    rarity: "legendary",
     available: true,
   },
   {
@@ -79,13 +56,6 @@ export const season2Prizes: Prize[] = [
     description: "She puts out...",
     image: "Season 2/Save the Princess.jpg",
     rarity: "uncommon",
-    available: true,
-  },
-  {
-    name: "Step Step Step",
-    description: "Death by Dubstep",
-    image: "Season 2/Step Step Step.jpg",
-    rarity: "legendary",
     available: true,
   },
   {
@@ -186,6 +156,34 @@ export const season2Prizes: Prize[] = [
     description: "Don't Let It In!",
     image: "Season 2/Butthole Shield.jpg",
     rarity: "rare",
+    available: false,
+  },
+  {
+    name: "Check Please",
+    description: "When you need to get out like now",
+    image: "Season 2/Check Please.jpg",
+    rarity: "legendary",
+    available: false,
+  },
+  {
+    name: "Flower Power",
+    description: "All the mushrooms he can eat...",
+    image: "Season 2/Flower Power.jpg",
+    rarity: "uncommon",
+    available: false,
+  },
+  {
+    name: "Hulk Smash",
+    description: "Hulk Want Mush Mush",
+    image: "Season 2/Hulk Smash.jpg",
+    rarity: "legendary",
+    available: false,
+  },
+  {
+    name: "Step Step Step",
+    description: "Death by Dubstep",
+    image: "Season 2/Step Step Step.jpg",
+    rarity: "legendary",
     available: false,
   },
 ];

@@ -2,14 +2,6 @@ import { Prize } from "./prize";
 
 export const season1Prizes: Prize[] = [
   {
-    name: "It Ain't Much",
-    description: "But It's Honest Work",
-    image: "Season 1/Toy Bin - Grand Prize.jpg",
-    rarity: "unique",
-    available: true,
-  },
-
-  {
     name: "Mechs and Shields",
     description: "Royal Bio Mechanical Rumble!",
     image: "Season 1/Toy Bin - Mechs and Shields.jpg",
@@ -28,13 +20,6 @@ export const season1Prizes: Prize[] = [
     description: "Zoom zoom, pew pew!",
     image: "Season 1/Toy Bin - Star Ships.jpg",
     rarity: "uncommon",
-    available: true,
-  },
-  {
-    name: "Clone Army",
-    description: "Is it really that dark on this side?",
-    image: "Season 1/Toy Bin - Clone Army.jpg",
-    rarity: "common",
     available: true,
   },
   {
@@ -63,6 +48,20 @@ export const season1Prizes: Prize[] = [
     description: "To the moon!",
     image: "Toy Bin - Wings.jpg",
     rarity: "legendary",
+    available: false,
+  },
+  {
+    name: "Clone Army",
+    description: "Is it really that dark on this side?",
+    image: "Season 1/Toy Bin - Clone Army.jpg",
+    rarity: "common",
+    available: false,
+  },
+  {
+    name: "It Ain't Much",
+    description: "But It's Honest Work",
+    image: "Season 1/Toy Bin - Grand Prize.jpg",
+    rarity: "unique",
     available: false,
   },
 ];
