@@ -7,12 +7,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { PrizeCard } from "./PrizeCard";
 import { PrizeResultCard } from "./PrizeResultCard";
+import { participation1Prizes } from "./prizes/Participation1Prizes";
 import { season1Prizes } from "./prizes/Season1Prizes";
 import { season2Prizes } from "./prizes/Season2Prizes";
 import { season3Prizes } from "./prizes/Season3Prizes";
 import { season4Prizes } from "./prizes/Season4Prizes";
 import { bonusPlusSpin, bonusSpinAgain } from "./prizes/SpecialBonus";
 import { fails } from "./prizes/SpecialFails";
+import { Prize } from "./prizes/prize";
 
 export const prizes = [
   ...season1Prizes,
@@ -28,6 +30,7 @@ export const SmoothPrizeShuffler = () => {
   const [spinSpeed, setSpinSpeed] = useState(0.5);
   const [includeDemon, setIncludeDemon] = useState(true);
   const [includeSlowbro, setIncludeSlowbro] = useState(false);
+  const [isNoSprinkles, setIsNoSprinkles] = useState(false);
 
   const specialPrizes = [...bonusPlusSpin, ...bonusSpinAgain, ...fails];
   const demonPrizes = includeDemon
@@ -35,6 +38,7 @@ export const SmoothPrizeShuffler = () => {
     : [];
 
   const includeSlowbroPrizes = includeSlowbro ? [...season4Prizes] : [];
+  const noSprinklesPrizes = isNoSprinkles ? [...participation1Prizes] : [];
 
   const spin = () => {
     if (isSpinning) return;
@@ -45,12 +49,19 @@ export const SmoothPrizeShuffler = () => {
     setSpinSpeed(0.1);
 
     setTimeout(() => {
-      const prizesToUse = [
-        ...specialPrizes,
-        ...demonPrizes,
-        ...includeSlowbroPrizes,
-      ].filter((prize) => prize.available);
+      let prizesToUse: Prize[] = [];
 
+      if (isNoSprinkles) {
+        prizesToUse = [...specialPrizes, ...participation1Prizes].filter(
+          (prize) => prize.available
+        );
+      } else {
+        prizesToUse = [
+          ...specialPrizes,
+          ...demonPrizes,
+          ...includeSlowbroPrizes,
+        ].filter((prize) => prize.available);
+      }
       const winner =
         prizesToUse[Math.floor(Math.random() * prizesToUse.length)];
       // @ts-expect-error ignore type error
@@ -103,6 +114,19 @@ export const SmoothPrizeShuffler = () => {
             />
           }
           label="Include Slowbro Items"
+        />
+      </Stack>
+
+      <Stack direction="row" spacing={2} justifyContent="center">
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={isNoSprinkles}
+              onChange={(e) => setIsNoSprinkles(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="No Sprinkles"
         />
       </Stack>
 
